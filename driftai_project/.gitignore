@@ -1,0 +1,12 @@
+# Backend
+Backend/node_modules/
+Backend/.env
+
+# Frontend
+Frontend/node_modules/
+Frontend/.env
+Frontend/build/
+
+# Mac og VS Code
+.DS_Store
+.vscode/
