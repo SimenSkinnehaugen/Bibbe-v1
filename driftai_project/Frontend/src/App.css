@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+/* Custom scrollbar for navigation */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  header,
+  nav {
+    display: none !important;
+  }
+
+  .bg-gray-50 {
+    background: white !important;
+  }
+
+  .shadow {
+    box-shadow: none !important;
+  }
+}
+
+/* Animation improvements */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Chart responsive improvements */
+.recharts-wrapper {
+  width: 100% !important;
+}
+
+/* Mobile improvements */
+@media (max-width: 640px) {
+  .max-w-7xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .overflow-x-auto {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+  }
+}
+
+/* Focus improvements for accessibility */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Error state improvements */
+.bg-red-50 {
+  background-color: #fef2f2;
+}
+
+.border-red-200 {
+  border-color: #fecaca;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+.text-red-700 {
+  color: #b91c1c;
+}
+
+.text-red-800 {
+  color: #991b1b;
+}
+
+/* Success state improvements */
+.bg-green-50 {
+  background-color: #f0fdf4;
+}
+
+.border-green-200 {
+  border-color: #bbf7d0;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.text-green-700 {
+  color: #15803d;
+}
+
+.text-green-800 {
+  color: #166534;
+}
+
+/* Loading state improvements */
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+/* Table improvements */
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  border-top-width: 1px;
+}
+
+.divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #e5e7eb;
+}
+
+/* Custom button hover effects */
+.hover\:bg-blue-700:hover {
+  background-color: #1d4ed8;
+}
+
+.hover\:bg-gray-700:hover {
+  background-color: #374151;
+}
+
+.hover\:bg-red-700:hover {
+  background-color: #b91c1c;
+}
+
+.hover\:bg-gray-50:hover {
+  background-color: #f9fafb;
+}
