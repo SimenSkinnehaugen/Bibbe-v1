@@ -1,0 +1,3 @@
+# Ignore environment files
+driftai_project/Backend/.env
+driftai_project/Frontend/.env
